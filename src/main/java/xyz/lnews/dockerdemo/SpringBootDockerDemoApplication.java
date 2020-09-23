@@ -15,8 +15,13 @@ public class SpringBootDockerDemoApplication {
         SpringApplication.run(SpringBootDockerDemoApplication.class, args);
     }
 
+    @GetMapping("/")
+    public String get0(){
+        return "hola!";
+    }
+    
     @GetMapping("/hello")
     public String getHello(){
-        return "hello!";
+        return "hola!";
     }
 }
